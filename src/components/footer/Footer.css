@@ -1,0 +1,33 @@
+.footer{
+    background: #474a50;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.left{
+    display: flex ;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    color: #aabbaa;
+}
+.footer-icons{
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+.footer-icons .i{
+    color: #aabbaa;
+}
+.footer-icons .i:hover{
+    color: #008001;
+}
+@media (max-width: 600px) {
+   .footer{
+    display: flex;
+    flex-direction: column;
+   }
+}

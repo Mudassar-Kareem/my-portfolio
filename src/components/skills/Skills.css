@@ -1,0 +1,68 @@
+.icon:hover{
+    scale: 1.2;
+}
+.skill {
+    padding: 0.5rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    margin-bottom: 8rem;
+    scroll-behavior: auto;
+}
+
+.skill h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6rem;
+    margin-top: 2rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 1200px) {
+    .main {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    .skill h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+
+    .skill h1 {
+        font-size: 1.5rem;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+}
+
+

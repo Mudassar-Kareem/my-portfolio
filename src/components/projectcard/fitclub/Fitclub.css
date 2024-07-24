@@ -1,0 +1,60 @@
+.car {
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 3px 3px 3px 3px rgba(251, 161, 40, 0.42);
+    position: relative;
+  }
+  
+  .slider-container {
+    position: relative;
+    width: 500px;
+    height: 250px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  .slider-image.active {
+    opacity: 1;
+  }
+  
+  
+  .Button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    justify-content: center;
+    text-decoration: none;
+    background: var(--orange);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50px;
+  }
+  
+  .btn:hover {
+    background: white;
+    color: var(--orange);
+    border: var(--orange) solid 1px;
+  }
+  @media (max-width: 600px){
+    .slider-container{
+        width: 300px;
+        height: 200px;
+    }
+  }
